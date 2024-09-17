@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8" />
+
+        <script>
+             function somar(){
+              const n1 = document.getElementById('n1').value
+              const n2 = document.getElementById('n2').value
+
+              const soma = Number(n1) + Number(n2)
+              
+              document.getElementById('resultado').innerHTML = "A soma dos numero é " + soma
+             }
+
+             function subtrair(){
+              const n1 = document.getElementById('n1').value
+              const n2 = document.getElementById('n2').value
+
+              const subtrair = Number(n1) - Number(n2)
+              
+              document.getElementById('resultado').innerHTML = "A subtração dos numero é " + subtrair
+             }
+
+             function multiplicar(){
+              const n1 = document.getElementById('n1').value
+              const n2 = document.getElementById('n2').value
+
+              const multiplicar = Number(n1) * Number(n2)
+              
+              document.getElementById('resultado').innerHTML = "A multiplicação dos numero é " + multiplicar
+             }
+
+             function dividir(){
+              const n1 = document.getElementById('n1').value
+              const n2 = document.getElementById('n2').value
+
+              const dividir = Number(n1) / Number(n2)
+              
+              document.getElementById('resultado').innerHTML = "A divisão dos numero é " + dividir
+             }
+
+
+        </script>
+    </head>
+    <body>
+     <form action="">
+     N1: <input type="text"  id="n1" /><br>
+     N2: <input type="text"  id="n2" /><br>
+
+     <input type="button" value="somar" onclick="somar()"/>
+     <input type="button" value="substrair" onclick="subtrair()"/>
+     <input type="button" value="multiplicar" onclick="multiplicar()"/>
+     <input type="button" value="dividir" onclick="dividir()"/>
+
+
+
+     <h1 id="resultado">O resultado é </h1>
+     
+
+    
+    </form>
+    </body>
+</html>
